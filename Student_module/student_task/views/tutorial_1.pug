@@ -1,0 +1,22 @@
+
+html
+  head
+    title Tutorial 1
+    style(type='text/css') .bgclr{
+            background-color: dodgerblue;
+        }
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  body
+    .test1
+      | this is div test1 
+      a#testa(href='#') CLick me
+    script(type='text/javascript') $(document).ready(function(){
+    $('#testa').click(function(){
+        alert($(this).text());
+        $(this).fadeOut('slow', function(){
+            $(this).fadeIn('slow');
+            $('body').addClass('bgclr')
+        });
+
+    });
+})

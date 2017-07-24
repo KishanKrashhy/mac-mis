@@ -1,0 +1,97 @@
+
+      nav.navbar.navbar-static-top(role='navigation')
+        // Sidebar toggle button
+        |  
+        a.navbar-btn.sidebar-toggle(href='#', data-toggle='offcanvas', role='button')
+          span.sr-only Toggle navigation
+          |  
+          span.icon-bar
+          |  
+          span.icon-bar
+          |  
+          span.icon-bar
+        .navbar-right
+    .wrapper.row-offcanvas.row-offcanvas-left
+      // Left side column. contains the logo and sidebar 
+      aside.left-side.sidebar-offcanvas
+        // sidebar: style can be found in sidebar.less 
+        section.sidebar
+          // Sidebar user panel 
+          .user-panel
+            .pull-left.image
+            .pull-left.info
+              p Hello, Jane
+              a(href='#')
+                i.fa.fa-circle.text-success
+                |  Online
+          // search form 
+          form.sidebar-form(action='#', method='get')
+          // /.search form 
+          // sidebar menu: : style can be found in sidebar.less 
+          ul.sidebar-menu
+            li.active
+            li
+            li.treeview
+              a(href='#')
+                i.fa.fa-bar-chart-o
+                |  
+                span Charts
+                |  
+                i.fa.fa-angle-left.pull-right
+              ul.treeview-menu
+                li
+                li
+                li
+            li.treeview
+              a(href='#')
+                i.fa.fa-laptop
+                |  
+                span UI Elements
+                |  
+                i.fa.fa-angle-left.pull-right
+              ul.treeview-menu
+                li
+                li
+                li
+                li
+                li
+            li.treeview
+              a(href='#')
+                i.fa.fa-edit
+                |  
+                span Forms
+                |  
+                i.fa.fa-angle-left.pull-right
+              ul.treeview-menu
+                li
+                li
+                li
+            li.treeview
+              a(href='#')
+                i.fa.fa-table
+                |  
+                span Tables
+                |  
+                i.fa.fa-angle-left.pull-right
+              ul.treeview-menu
+                li
+                li
+            li
+            li
+            li.treeview
+              a(href='#')
+                i.fa.fa-folder
+                |  
+                span Examples
+                |  
+                i.fa.fa-angle-left.pull-right
+              ul.treeview-menu
+                li
+                li
+                li
+                li
+                li
+                li
+                li
+        // /.sidebar 
+      // Right side column. Contains the navbar and content of the page 
